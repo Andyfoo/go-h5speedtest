@@ -44,7 +44,7 @@ var settings = {
 	time_auto: true, // if set to true, tests will take less time on faster connections
 	time_ulGraceTime: 3, //time to wait in seconds before actually measuring ul speed (wait for buffers to fill)
 	time_dlGraceTime: 1.5, //time to wait in seconds before actually measuring dl speed (wait for TCP window to increase)
-	count_ping: 10, // number of pings to perform in ping test
+	count_ping: 35, // number of pings to perform in ping test
 	url_dl: "garbage.php", // path to a large file or garbage.php, used for download test. must be relative to this js file
 	url_ul: "empty.php", // path to an empty file, used for upload test. must be relative to this js file
 	url_ping: "empty.php", // path to an empty file, used for ping test. must be relative to this js file
@@ -63,7 +63,7 @@ var settings = {
 	overheadCompensationFactor: 1.06, //can be changed to compensatie for transport overhead. (see doc.md for some other values)
 	useMebibits: false, //if set to true, speed will be reported in mebibits/s instead of megabits/s
 	telemetry_level: 0, // 0=disabled, 1=basic (results only), 2=full (results and timing) 3=debug (results+log)
-	url_telemetry: "results/telemetry.php", // path to the script that adds telemetry data to the database
+	url_telemetry: "telemetry.php", // path to the script that adds telemetry data to the database
 	telemetry_extra: "" //extra data that can be passed to the telemetry through the settings
 };
 

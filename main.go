@@ -79,7 +79,13 @@ func StartHttp() {
 		http.Handle("/", http.FileServer(rice.MustFindBox("./speedtest").HTTPBox()))
 	}
 	log.Println("listen", addr)
-	http.ListenAndServe(addr, nil)
+
+	ln, err := net.Listen("tcp", addr)
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+	log.Fatal(http.Serve(ln, nil))
 }
 
 func IsDir(path string) bool {
