@@ -17,8 +17,8 @@ Download file from release (or compile by yourself), put it anywhere and run and
   [-d  daemon start]
 ```
 
->./go-h5speedtest -l ":8080"
->./go-h5speedtest -l ":8080" -d
+> ./go-h5speedtest -l ":8080"
+> ./go-h5speedtest -l ":8080" -d
 
 
 ![screenshot](https://raw.githubusercontent.com/Andyfoo/go-h5speedtest/master/go-h5speedtest.png)
